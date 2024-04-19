@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav> <img src="logo.png" alt="Logo">
+            <a href="index.html"></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-times" onclick="hideMenu"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Course</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu"></i>
+        </nav>
+
+        <div class="text-box"><h1>Worlds Biggest University</h1>
+        <p>
+            The Transport Department is the authority for administering the Road Traffic Ordinance and legislation for the management of road traffic, regulation of public transport <br> services and operation of major transport infrastructures.
+        </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+    </div>
+    </section>
+
+     <!----Javascript for toggle menu---->
+     <script>
+
+    var navLink = document.getElementById("navLink")
+
+    function showMenu(){
+        navLink.style.right = "0"
+    }
+    function hideMenu(){
+        navLink.style.right = "-200px"
+    }
+
+
+     </script>
+</body>
+</html>
